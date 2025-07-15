@@ -84,24 +84,26 @@
         <!-- Agendamento -->
         <section class="container text-center" id="agendamento">
             <h2>Agendamento</h2>
-            <p>Escolha seu horário e venha viver a experiência Estilo Fino.</p>
-            <!-- Google Calendar Appointment Scheduling begin -->
-            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-            <script>
-                (function () {
-                    var target = document.currentScript;
-                    window.addEventListener('load', function () {
-                        calendar.schedulingButton.load({
-                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ycBnYsLe5uBacWc052LR3uHFRf2c5d-_O5O7DdiV1TaW7X75s13mu1DdoCXJJj1IPalNhvc9W?gv=true',
-                            color: '#914c1e',
-                            label: "Agendar Agora",
-                            target,
-                        });
-                    });
-                })();
-            </script>
-            <!-- end Google Calendar Appointment Scheduling -->
+            <p class="mb-2">Escolha seu horário e venha viver a experiência Estilo Fino.</p>
+            <div>
+              <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ycBnYsLe5uBacWc052LR3uHFRf2c5d-_O5O7DdiV1TaW7X75s13mu1DdoCXJJj1IPalNhvc9W?gv=true',
+      color: '#914c1e',
+      label: "Agendar Agora",
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+            </div>
         </section>
 
         <!-- Galeria -->
