@@ -4,3 +4,7 @@ const navLinks = document.getElementById('nav-links');
 toggleBtn.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
+
+navLinks.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
