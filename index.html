@@ -12,7 +12,7 @@
 <body>
     <header class="nav-header">
         <nav class="navbar">
-            <div class="logo">Estilo Fino</div>
+            <h1 class="logo">Estilo Fino</h1>
             <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- Ícone ☰ -->
 
             <ul class="nav-links" id="nav-links">
@@ -31,7 +31,7 @@
         <section class="container" id="home">
             <h1>Bem-vindo à<br>Barbearia Estilo Fino</h1>
             <p>Transformando estilo e confiança com cada corte.</p>
-            <a href="#agendamento" class="btn">Agende agora</a>
+            <a href="https://wa.me/5599999999999" target="_blank" class="btn">Agendar via WhatsApp</a>
         </section>
         <!-- Sobre -->
         <section class="container" id="sobre">
@@ -45,7 +45,7 @@
                         Com mais de 10 anos de experiência, oferecemos um ambiente moderno e confortável, com
                         profissionais especializados em cortes clássicos e atuais.
                     </p>
-                    <a href="#agendamento" class="btn">Agende agora</a>
+            <a href="https://wa.me/5599999999999" target="_blank" class="btn">Fale conosco</a>
                 </div>
             </div>
         </section>
@@ -85,7 +85,23 @@
         <section class="container text-center" id="agendamento">
             <h2>Agendamento</h2>
             <p>Escolha seu horário e venha viver a experiência Estilo Fino.</p>
-            <a href="https://wa.me/5599999999999" target="_blank" class="btn">Agendar via WhatsApp</a>
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+                (function () {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function () {
+                        calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ycBnYsLe5uBacWc052LR3uHFRf2c5d-_O5O7DdiV1TaW7X75s13mu1DdoCXJJj1IPalNhvc9W?gv=true',
+                            color: '#914c1e',
+                            label: "Agendar Agora",
+                            target,
+                        });
+                    });
+                })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
         </section>
 
         <!-- Galeria -->
